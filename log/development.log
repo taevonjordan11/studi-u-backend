@@ -1,0 +1,2 @@
+  [1m[35m (175.6ms)[0m  [1m[35mCREATE DATABASE "studi_u_api_development" ENCODING = 'unicode'[0m
+  [1m[35m (64.2ms)[0m  [1m[35mCREATE DATABASE "studi_u_api_test" ENCODING = 'unicode'[0m
