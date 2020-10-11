@@ -7,7 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
     puts 'destroying studios'
     Studio.destroy_all
+    User.destroy_all
     puts "creating studios"
+
+    user = User.create(
+    name: 'Taevon Jordan',
+    email:"taevon@gmail.com",
+    image: "https://cdn1.iconfinder.com/data/icons/avatars-vol-1/140/_african_american_man-512.png",
+    password: "123")
 
 studios = [
     {
@@ -17,7 +24,9 @@ studios = [
         description: 'Chill',
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZPTYyJXqLhf8A5yzOGuoW2EwJx3cesT57yg&usqp=CAU',
         rating: 5,
-        price: 40
+        price: 40,
+        hours: 0,
+        user_id: User.all.sample.id
     },
     {
         name: 'Melerose Recording',
@@ -26,7 +35,8 @@ studios = [
         description: 'vibrant',
         image: 'https://i.ytimg.com/vi/Nqlu6842YK0/maxresdefault.jpg',
         rating: 3,
-        price: 24
+        price: 24,
+        hours: 0
     },
     {
         name: 'Cool Space',
@@ -35,7 +45,8 @@ studios = [
         description: 'Chill',
         image: 'https://www.audio-issues.com/wp-content/uploads/2012/07/home-recording-studio.jpg',
         rating: 4,
-        price: 35
+        price: 35,
+        hours: 0
     },
     {
         name: 'Area 51',
@@ -44,7 +55,8 @@ studios = [
         description: 'Chill',
         image: 'https://www.psneurope.com/wp-content/uploads/2020/02/Andy-Huckvale-home-studio-PSNEurope.jpg',
         rating: 3,
-        price: 20
+        price: 20,
+        hours: 0
     },
     {
         name: 'Golden Studios',
@@ -53,9 +65,12 @@ studios = [
         description: 'Fun',
         image: 'https://pinnacle-digital.co.uk/wp-content/uploads/2018/05/Studio-monitors.jpg',
         rating: 5,
-        price: 50
+        price: 50,
+        hours: 0
     },
 ]
+
+
 
 studios.each do |studio|
     Studio.create!(studio)

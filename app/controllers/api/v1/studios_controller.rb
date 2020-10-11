@@ -2,7 +2,7 @@ class Api::V1::StudiosController < ApplicationController
     def index 
         studios = Studio.all.sort_by {  |studio| studio.name  }
 
-        render json: studios, except: [:created_at, :updated_at]
+        render json: studios,  include: [:users]
     end
 
     def update
@@ -22,7 +22,7 @@ class Api::V1::StudiosController < ApplicationController
     def show 
         studio = Studio.find(params[:id])
 
-        render json: studio
+        render json: studio, include: [:users]
     end 
 
     private
