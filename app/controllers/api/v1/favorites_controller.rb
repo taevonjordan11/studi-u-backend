@@ -2,8 +2,14 @@ class Api::V1::FavoritesController < ApplicationController
     def index 
         favorites = Favorite.all
 
-        render json: favorites, except: [:created_at, :updated_at]
+        render json: favorites, include: [:studio]
     end
+
+    def show 
+        favorite = Favorite.find(params[:id])
+
+        render json: favorite, include: [:studio]
+    end 
 
     def update
         favorite = Favorite.find(params[:id])

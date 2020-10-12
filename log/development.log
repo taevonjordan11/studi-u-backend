@@ -7717,3 +7717,1787 @@ Processing by Api::V1::StudiosController#index as */*
 Completed 200 OK in 24ms (Views: 18.8ms | ActiveRecord: 3.4ms | Allocations: 10292)
 
 
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 01:26:18 -0400
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 01:26:18 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::StudiosController#index as */*
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (1.5ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mStudio Load (1.5ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+Completed 200 OK in 118ms (Views: 68.2ms | ActiveRecord: 32.4ms | Allocations: 33695)
+
+
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 130ms (Views: 49.3ms | ActiveRecord: 70.9ms | Allocations: 37483)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 01:26:52 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 2.8ms | Allocations: 10311)
+
+
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mStudio Load (4.7ms)[0m  [1m[34mSELECT "studios".* FROM "studios" INNER JOIN "favorites" ON "studios"."id" = "favorites"."studio_id" WHERE "favorites"."user_id" = $1 LIMIT $2[0m  [["user_id", 10], ["LIMIT", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mStudio Load (0.6ms)[0m  [1m[34mSELECT "studios".* FROM "studios" INNER JOIN "favorites" ON "studios"."id" = "favorites"."studio_id" WHERE "favorites"."user_id" = $1 LIMIT $2[0m  [["user_id", 10], ["LIMIT", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFavorite Load (0.5ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1 LIMIT $2[0m  [["user_id", 10], ["LIMIT", 11]]
+Started GET "/api/v1/users" for ::1 at 2020-10-12 14:52:58 -0400
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/nude.plus/Development/code/MOD5/studi-u-api/app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+...  render json: user, includes [:studio]
+...                              ^):
+  
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+Started GET "/favicon.ico" for ::1 at 2020-10-12 14:52:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/users" for ::1 at 2020-10-12 14:53:15 -0400
+  
+SyntaxError (/Users/nude.plus/Development/code/MOD5/studi-u-api/app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+...   render json: user, include [:studio]
+...                              ^):
+  
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+Started GET "/api/v1/users" for ::1 at 2020-10-12 14:53:16 -0400
+  
+SyntaxError (/Users/nude.plus/Development/code/MOD5/studi-u-api/app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+...   render json: user, include [:studio]
+...                              ^):
+  
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+Started GET "/api/v1/users" for ::1 at 2020-10-12 14:53:17 -0400
+  
+SyntaxError (/Users/nude.plus/Development/code/MOD5/studi-u-api/app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+...   render json: user, include [:studio]
+...                              ^):
+  
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+Started GET "/api/v1/users" for ::1 at 2020-10-12 14:53:52 -0400
+  
+SyntaxError (/Users/nude.plus/Development/code/MOD5/studi-u-api/app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+...   render json: user, include [:studio]
+...                              ^):
+  
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 14:54:13 -0400
+Processing by Api::V1::StudiosController#index as HTML
+  [1m[36mStudio Load (1.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 40ms (Views: 19.4ms | ActiveRecord: 9.7ms | Allocations: 27020)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 14:54:29 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 1.3ms | Allocations: 4107)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-10-12 14:54:53 -0400
+  
+SyntaxError (/Users/nude.plus/Development/code/MOD5/studi-u-api/app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+...   render json: user, include [:studio]
+...                              ^):
+  
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+app/controllers/api/v1/users_controller.rb:24: syntax error, unexpected [, expecting do or '{' or '('
+Started GET "/api/v1/users" for ::1 at 2020-10-12 14:55:27 -0400
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:3:in `sort_by'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 7032)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 14:59:24 -0400
+Processing by Api::V1::StudiosController#index as */*
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 14:59:24 -0400
+  [1m[36mStudio Load (2.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mStudio Load (2.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+Completed 200 OK in 75ms (Views: 37.1ms | ActiveRecord: 15.4ms | Allocations: 26094)
+
+
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 40ms (Views: 22.5ms | ActiveRecord: 11.0ms | Allocations: 16000)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:01:04 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (1.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:01:04 -0400
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mStudio Load (1.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 36ms (Views: 28.5ms | ActiveRecord: 5.2ms | Allocations: 16069)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 21.8ms | ActiveRecord: 8.4ms | Allocations: 17120)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:01:06 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 2.3ms | Allocations: 10292)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:02:24 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 1.4ms | Allocations: 4051)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:02:38 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:02:45 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (1.7ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 1.7ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:03:15 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:03:18 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (1.6ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.6ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:03:19 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.9ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.9ms | Allocations: 1105)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:04:49 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:04:49 -0400
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  [1m[36mStudio Load (1.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 23.8ms | ActiveRecord: 7.4ms | Allocations: 17289)
+
+
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 22.2ms | ActiveRecord: 5.6ms | Allocations: 17150)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:04:51 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:05:13 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.5ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:05:18 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.7ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.7ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:06:56 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:07:02 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:07:06 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1108)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:07:08 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:07:42 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:08:02 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.7ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.7ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:08:06 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.7ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.7ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:08:07 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.7ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.7ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:08:15 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:09:31 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 1105)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:10:35 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:10:35 -0400
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 17.0ms | ActiveRecord: 2.8ms | Allocations: 11319)
+
+
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.8ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 14.9ms | ActiveRecord: 4.4ms | Allocations: 10393)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:10:37 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:11:15 -0400
+Processing by Api::V1::StudiosController#index as */*
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:11:15 -0400
+  [1m[36mStudio Load (0.9ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.8ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 32ms (Views: 20.6ms | ActiveRecord: 9.6ms | Allocations: 17252)
+
+
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 32ms (Views: 23.9ms | ActiveRecord: 5.3ms | Allocations: 18361)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:11:15 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:12:27 -0400
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:12:27 -0400
+Processing by Api::V1::StudiosController#index as */*
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (2.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mStudio Load (5.9ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 51ms (Views: 41.9ms | ActiveRecord: 6.7ms | Allocations: 18898)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 35.3ms | ActiveRecord: 15.4ms | Allocations: 20707)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:12:28 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:12:54 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (1.1ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:12:54 -0400
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mStudio Load (3.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+Completed 200 OK in 42ms (Views: 31.6ms | ActiveRecord: 8.6ms | Allocations: 14839)
+
+
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 42ms (Views: 27.6ms | ActiveRecord: 9.9ms | Allocations: 15911)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:12:55 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:13:14 -0400
+Processing by Api::V1::StudiosController#index as */*
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:13:14 -0400
+  [1m[36mStudio Load (1.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mStudio Load (1.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 36ms (Views: 25.9ms | ActiveRecord: 7.4ms | Allocations: 17294)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 38ms (Views: 26.4ms | ActiveRecord: 8.1ms | Allocations: 18387)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:13:15 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:16:10 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:16:16 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:16:28 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:16:35 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:19:54 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.6ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.6ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:20:21 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.5ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:20:24 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1105)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:20:48 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.8ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:20:48 -0400
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 34ms (Views: 27.8ms | ActiveRecord: 3.9ms | Allocations: 11343)
+
+
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.7ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 12.6ms | ActiveRecord: 3.8ms | Allocations: 10393)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:20:49 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:21:05 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:21:18 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:21:20 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:21:21 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:21:28 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 1105)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:22:07 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 4.3ms | Allocations: 7308)
+
+
+  
+NoMethodError (undefined method `studios' for #<Favorite:0x00007f84623eac40>
+Did you mean?  studio
+               studio=):
+  
+app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:22:15 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 29ms (Views: 22.9ms | ActiveRecord: 4.5ms | Allocations: 11300)
+
+
+Started GET "/api/v1/favorites/1" for ::1 at 2020-10-12 15:22:46 -0400
+Processing by Api::V1::FavoritesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFavorite Load (0.9ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:9:in `show'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms | Allocations: 3049)
+
+
+  
+NoMethodError (undefined method `studios' for #<Favorite:0x00007f8460cd8958>
+Did you mean?  studio
+               studio=):
+  
+app/controllers/api/v1/favorites_controller.rb:11:in `show'
+Started GET "/api/v1/favorites/1" for ::1 at 2020-10-12 15:23:00 -0400
+Processing by Api::V1::FavoritesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:9:in `show'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:11:in `show'
+Completed 200 OK in 14ms (Views: 3.6ms | ActiveRecord: 5.2ms | Allocations: 7816)
+
+
+Started GET "/api/v1/favorites/" for ::1 at 2020-10-12 15:23:14 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 15.9ms | ActiveRecord: 5.8ms | Allocations: 13539)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:24:28 -0400
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:24:28 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (1.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mStudio Load (1.8ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+Completed 200 OK in 67ms (Views: 26.6ms | ActiveRecord: 23.2ms | Allocations: 30420)
+
+
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 14.8ms | ActiveRecord: 8.0ms | Allocations: 19715)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:24:34 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 1.2ms | Allocations: 4951)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:24:42 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 2.3ms | Allocations: 10311)
+
+
+Started POST "/api/v1/favorites" for ::1 at 2020-10-12 15:24:47 -0400
+Processing by Api::V1::FavoritesController#create as JSON
+  Parameters: {"studio_id"=>48, "user_id"=>10, "favorite"=>{"user_id"=>10, "studio_id"=>48}}
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mStudio Load (0.5ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mFavorite Create (12.7ms)[0m  [1m[32mINSERT INTO "favorites" ("user_id", "studio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["studio_id", 48], ["created_at", "2020-10-12 19:24:47.318232"], ["updated_at", "2020-10-12 19:24:47.318232"]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+Completed 200 OK in 33ms (Views: 0.3ms | ActiveRecord: 17.0ms | Allocations: 9420)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:24:55 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 2.3ms | Allocations: 10445)
+
+
+Started POST "/api/v1/favorites" for ::1 at 2020-10-12 15:24:56 -0400
+Processing by Api::V1::FavoritesController#create as JSON
+  Parameters: {"studio_id"=>48, "user_id"=>10, "favorite"=>{"user_id"=>10, "studio_id"=>48}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mFavorite Create (0.5ms)[0m  [1m[32mINSERT INTO "favorites" ("user_id", "studio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["studio_id", 48], ["created_at", "2020-10-12 19:24:56.629698"], ["updated_at", "2020-10-12 19:24:56.629698"]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 4810)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:25:07 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 12.2ms | ActiveRecord: 2.1ms | Allocations: 10586)
+
+
+Started GET "/api/v1/favorites/" for ::1 at 2020-10-12 15:25:23 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms | Allocations: 7406)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:25:51 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.5ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.8ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 1.7ms | Allocations: 7411)
+
+
+Started GET "/api/v1/favorites/" for ::1 at 2020-10-12 15:26:19 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 1.0ms | Allocations: 7406)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:27:12 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.6ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:27:12 -0400
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mStudio Load (1.7ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 22.2ms | ActiveRecord: 8.3ms | Allocations: 16375)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 19.7ms | ActiveRecord: 5.7ms | Allocations: 17738)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:27:13 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.6ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.8ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 2.0ms | Allocations: 7408)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:29:49 -0400
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:29:49 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::StudiosController#index as */*
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.8ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mStudio Load (1.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 50]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 47]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 49]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 51]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 52]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 48]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 50ms (Views: 19.5ms | ActiveRecord: 27.3ms | Allocations: 38508)
+
+
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 53]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 60ms (Views: 29.1ms | ActiveRecord: 13.7ms | Allocations: 42476)
+
+
+Started GET "/api/v1/favorites/" for ::1 at 2020-10-12 15:29:56 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 2.3ms | Allocations: 10888)
+
+
+Started GET "/api/v1/favorites/" for ::1 at 2020-10-12 15:30:01 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 1.2ms | Allocations: 7406)
+
+
+Started GET "/api/v1/favorites/" for ::1 at 2020-10-12 15:30:02 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mCACHE Studio Load (0.0ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 1.1ms | Allocations: 7406)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Destroy (2.5ms)[0m  [1m[31mDELETE FROM "studios" WHERE "studios"."id" = $1[0m  [["id", 47]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Destroy (0.3ms)[0m  [1m[31mDELETE FROM "studios" WHERE "studios"."id" = $1[0m  [["id", 48]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Destroy (0.2ms)[0m  [1m[31mDELETE FROM "studios" WHERE "studios"."id" = $1[0m  [["id", 49]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Destroy (0.2ms)[0m  [1m[31mDELETE FROM "studios" WHERE "studios"."id" = $1[0m  [["id", 50]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Destroy (0.2ms)[0m  [1m[31mDELETE FROM "studios" WHERE "studios"."id" = $1[0m  [["id", 51]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Destroy (0.2ms)[0m  [1m[31mDELETE FROM "studios" WHERE "studios"."id" = $1[0m  [["id", 52]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Destroy (0.3ms)[0m  [1m[31mDELETE FROM "studios" WHERE "studios"."id" = $1[0m  [["id", 53]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFavorite Destroy (0.3ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFavorite Destroy (0.2ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFavorite Destroy (0.2ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFavorite Destroy (0.2ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFavorite Destroy (0.2ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFavorite Destroy (0.1ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Taevon Jordan"], ["email", "taevon@gmail.com"], ["password", "123"], ["created_at", "2020-10-12 19:30:22.446942"], ["updated_at", "2020-10-12 19:30:22.446942"], ["image", "https://cdn1.iconfinder.com/data/icons/avatars-vol-1/140/_african_american_man-512.png"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Create (1.7ms)[0m  [1m[32mINSERT INTO "studios" ("name", "address", "contact", "description", "image", "rating", "price", "created_at", "updated_at", "user_id", "hours") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Brewery Recording"], ["address", "910 Grand St, Brooklyn, NY 11211"], ["contact", " (844) 717-2739"], ["description", "Chill"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZPTYyJXqLhf8A5yzOGuoW2EwJx3cesT57yg&usqp=CAU"], ["rating", 5], ["price", 40], ["created_at", "2020-10-12 19:30:22.453173"], ["updated_at", "2020-10-12 19:30:22.453173"], ["user_id", 11], ["hours", 0]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Create (0.3ms)[0m  [1m[32mINSERT INTO "studios" ("name", "address", "contact", "description", "image", "rating", "price", "created_at", "updated_at", "hours") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Melerose Recording"], ["address", "Brooklyn, NY"], ["contact", "melerose@gmail.com"], ["description", "vibrant"], ["image", "https://i.ytimg.com/vi/Nqlu6842YK0/maxresdefault.jpg"], ["rating", 3], ["price", 24], ["created_at", "2020-10-12 19:30:22.458516"], ["updated_at", "2020-10-12 19:30:22.458516"], ["hours", 0]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Create (0.2ms)[0m  [1m[32mINSERT INTO "studios" ("name", "address", "contact", "description", "image", "rating", "price", "created_at", "updated_at", "hours") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Cool Space"], ["address", "Harlem, NY"], ["contact", "cool_space@gmail.com"], ["description", "Chill"], ["image", "https://www.audio-issues.com/wp-content/uploads/2012/07/home-recording-studio.jpg"], ["rating", 4], ["price", 35], ["created_at", "2020-10-12 19:30:22.461536"], ["updated_at", "2020-10-12 19:30:22.461536"], ["hours", 0]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Create (0.3ms)[0m  [1m[32mINSERT INTO "studios" ("name", "address", "contact", "description", "image", "rating", "price", "created_at", "updated_at", "hours") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Area 51"], ["address", "Bronx, NY"], ["contact", "area@gmail.com"], ["description", "Chill"], ["image", "https://www.psneurope.com/wp-content/uploads/2020/02/Andy-Huckvale-home-studio-PSNEurope.jpg"], ["rating", 3], ["price", 20], ["created_at", "2020-10-12 19:30:22.465101"], ["updated_at", "2020-10-12 19:30:22.465101"], ["hours", 0]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudio Create (0.2ms)[0m  [1m[32mINSERT INTO "studios" ("name", "address", "contact", "description", "image", "rating", "price", "created_at", "updated_at", "hours") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Golden Studios"], ["address", "Queens, NY"], ["contact", "golden@gmail.com"], ["description", "Fun"], ["image", "https://pinnacle-digital.co.uk/wp-content/uploads/2018/05/Studio-monitors.jpg"], ["rating", 5], ["price", 50], ["created_at", "2020-10-12 19:30:22.468352"], ["updated_at", "2020-10-12 19:30:22.468352"], ["hours", 0]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:30:59 -0400
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:30:59 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::StudiosController#index as */*
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.6ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mStudio Load (1.1ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+Completed 200 OK in 55ms (Views: 28.7ms | ActiveRecord: 12.9ms | Allocations: 30528)
+
+
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 15.7ms | ActiveRecord: 35.4ms | Allocations: 30329)
+
+
+Started GET "/api/v1/favorites/" for ::1 at 2020-10-12 15:31:03 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 858)
+
+
+Started POST "/api/v1/favorites" for ::1 at 2020-10-12 15:31:10 -0400
+Processing by Api::V1::FavoritesController#create as JSON
+  Parameters: {"studio_id"=>57, "user_id"=>10, "favorite"=>{"user_id"=>10, "studio_id"=>57}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[35m (1.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+Completed 422 Unprocessable Entity in 39ms (ActiveRecord: 4.4ms | Allocations: 12555)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist):
+  
+app/controllers/api/v1/favorites_controller.rb:23:in `create'
+Started GET "/api/v1/favorites/" for ::1 at 2020-10-12 15:31:13 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.5ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 817)
+
+
+Started GET "/api/v1/favorites/" for ::1 at 2020-10-12 15:31:14 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 837)
+
+
+Started GET "/api/v1/favorites/" for ::1 at 2020-10-12 15:31:15 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms | Allocations: 818)
+
+
+Started GET "/api/v1/favorites/" for ::1 at 2020-10-12 15:31:16 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 818)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:31:21 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 818)
+
+
+Started GET "/api/v1/users" for ::1 at 2020-10-12 15:31:28 -0400
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:3:in `sort_by'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 4944)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:31:52 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.7ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 15.6ms | ActiveRecord: 4.9ms | Allocations: 7556)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:32:47 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 1.4ms | Allocations: 7559)
+
+
+Started POST "/api/v1/favorites" for ::1 at 2020-10-12 15:32:50 -0400
+Processing by Api::V1::FavoritesController#create as JSON
+  Parameters: {"studio_id"=>57, "user_id"=>11, "favorite"=>{"user_id"=>11, "studio_id"=>57}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mFavorite Create (0.8ms)[0m  [1m[32mINSERT INTO "favorites" ("user_id", "studio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 11], ["studio_id", 57], ["created_at", "2020-10-12 19:32:50.127958"], ["updated_at", "2020-10-12 19:32:50.127958"]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 4915)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:32:54 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.6ms | Allocations: 2111)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:34:12 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.7ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 1.1ms | Allocations: 2103)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:34:28 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.5ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.8ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 1.3ms | Allocations: 2103)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:34:38 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.6ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 1.0ms | Allocations: 2104)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:35:15 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:35:15 -0400
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mStudio Load (5.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 19.0ms | ActiveRecord: 7.0ms | Allocations: 11781)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 27ms (Views: 16.9ms | ActiveRecord: 7.8ms | Allocations: 11939)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:35:16 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.8ms | Allocations: 2106)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:35:19 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 1.7ms | Allocations: 7703)
+
+
+Started POST "/api/v1/favorites" for ::1 at 2020-10-12 15:35:23 -0400
+Processing by Api::V1::FavoritesController#create as JSON
+  Parameters: {"studio_id"=>56, "user_id"=>11, "favorite"=>{"user_id"=>11, "studio_id"=>56}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[36mFavorite Create (0.7ms)[0m  [1m[32mINSERT INTO "favorites" ("user_id", "studio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 11], ["studio_id", 56], ["created_at", "2020-10-12 19:35:23.656090"], ["updated_at", "2020-10-12 19:35:23.656090"]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:23:in `create'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 4815)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:35:28 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 1.9ms | Allocations: 7850)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:35:44 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 1.0ms | Allocations: 3383)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:35:51 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.7ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:35:51 -0400
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mStudio Load (1.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+Completed 200 OK in 26ms (Views: 17.5ms | ActiveRecord: 6.3ms | Allocations: 11204)
+
+
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 16.8ms | ActiveRecord: 4.5ms | Allocations: 12197)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:35:53 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.8ms | Allocations: 3389)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:36:13 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 1.7ms | Allocations: 7850)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:38:17 -0400
+Processing by Api::V1::FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.7ms | Allocations: 3383)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:38:51 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.5ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.2ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.9ms | Allocations: 3385)
+
+
+Started GET "/api/v1/favorites" for ::1 at 2020-10-12 15:38:52 -0400
+Processing by Api::V1::FavoritesController#index as */*
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (1.7ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+  [1m[36mStudio Load (0.9ms)[0m  [1m[34mSELECT "studios".* FROM "studios" WHERE "studios"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/favorites_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 2.9ms | Allocations: 3385)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:40:18 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.4ms | Allocations: 7850)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:40:24 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.4ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 1.5ms | Allocations: 7850)
+
+
+Started GET "/api/v1/studios" for ::1 at 2020-10-12 15:40:35 -0400
+Processing by Api::V1::StudiosController#index as */*
+  [1m[36mStudio Load (0.3ms)[0m  [1m[34mSELECT "studios".* FROM "studios"[0m
+  ↳ app/controllers/api/v1/studios_controller.rb:3:in `sort_by'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 57]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 54]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 56]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 58]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "favorites" ON "users"."id" = "favorites"."user_id" WHERE "favorites"."studio_id" = $1[0m  [["studio_id", 55]]
+  ↳ app/controllers/api/v1/studios_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 1.6ms | Allocations: 7850)
+
+

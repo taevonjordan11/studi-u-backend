@@ -8,6 +8,7 @@
     puts 'destroying studios'
     Studio.destroy_all
     User.destroy_all
+    Favorite.destroy_all
     puts "creating studios"
 
     user = User.create(
