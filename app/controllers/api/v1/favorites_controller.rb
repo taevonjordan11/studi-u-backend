@@ -25,6 +25,11 @@ class Api::V1::FavoritesController < ApplicationController
         render json: favorite, except: [:created_at, :updated_at] 
     end
 
+    def destroy
+        favorite = Favorite.find(params[:id])
+        favorite.destroy
+    end
+
     private
 
     def favorite_params
