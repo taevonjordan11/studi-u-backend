@@ -1,8 +1,8 @@
 class Api::V1::UsersController < ApplicationController
     def index
-        users = User.all.sort_by {  |user| user.name  }
+        users = User.all
 
-        render json: users, except: [:created_at, :updated_at]
+        render json: users, include: [:studios]
     end
 
     def update
@@ -21,7 +21,7 @@ class Api::V1::UsersController < ApplicationController
 
     def show 
         user = User.find(params[:id])
-        render json: user
+        render json: user, include: [:studios]
     end 
 
     

@@ -25,9 +25,14 @@ class Api::V1::StudiosController < ApplicationController
         render json: studio, include: [:users]
     end 
 
+    def destroy
+        studio = Studio.find(params[:id])
+        studio.destroy
+    end
+
     private
 
     def studio_params
-        params.require(:studio).permit(:name, :address, :contact, :image, :rating, :price)
+        params.require(:studio).permit(:name, :address, :contact, :image, :rating, :price, :user_id, :description, :hours)
     end
 end
